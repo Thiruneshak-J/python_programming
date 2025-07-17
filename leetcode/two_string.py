@@ -1,0 +1,6 @@
+n1=list(map(str,input("enter the number")))
+n2=list(map(str,input("enter the nunmber")))
+n3=int(''.join(str(i) for i in n1))
+n4=int(''.join(str(j) for j in n2))
+t=str(n3+n4)
+print(list(map(str,t[::-1])))
