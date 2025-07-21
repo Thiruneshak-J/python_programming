@@ -1,0 +1,13 @@
+import os
+new=os.open("typebypython.txt",os.O_CREAT|os.O_RDWR)
+os.write(new,b"hello i am python")
+os.fsync(new)
+os.lseek(new, 0, os.SEEK_SET)
+print(os.read(new,100))
+os.close(new)
+new=os.open("typebypython.txt",os.O_CREAT|os.O_RDWR)
+os.write(new,b"iam thiru")
+os.fsync(new)
+os.lseek(new, 0, os.SEEK_SET)
+print(os.read(new,500))
+os.close(new)
